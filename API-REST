@@ -38,12 +38,12 @@ def internal_server_error(error):
 def Estudiantes():
     datos = {
         "estudiante": {
-            "apellidos": "Porras Villalobos",
-            "celular": 87128419,
-            "email": "esporrasvi@est.utn.ac.cr",
-            "id": 604840946,
-            "nivel": "Junior",
-            "nombre": "Esteban Jesus"
+            "apellidos": "Alfaro vargas",
+            "celular": 01735100,
+            "email": "guivaral@gmaio.com,
+            "id": 305120653,
+            "nivel": "master",
+            "nombre": "guillermo"
         },
         "status": 200,
         "status_message": "OK"
