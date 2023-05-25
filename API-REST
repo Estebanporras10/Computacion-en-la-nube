@@ -1,9 +1,11 @@
 from flask import Flask, jsonify, make_response, request
+import json
+
 
 app = Flask(__name__)
 
 data = []
-
+data1 = {}
 
 # -------------------------ERRORES------------------------#
 
@@ -51,6 +53,8 @@ def Estudiantes():
 
 @app.route('/datos', methods=['POST'])
 def Datos():
+
+    data.clear()
     request_data = request.get_json()
     data.append(request_data)
 
@@ -101,6 +105,7 @@ def Elevar():
     for dato in data:
         for clave, valor in dato.items():
             datos_elevados[clave] = valor * valor
+
     resultado = {
 
         "d_elevedaos":  datos_elevados,
